@@ -1,25 +1,32 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 const Header = () => {
   return (
-    <div>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
-        <Container xxl>
-          <Navbar.Brand className="ii" href="/t" >insurence adviser</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-            <Nav>
-              <Nav.Link href="/">
-                Logout
-                </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <Navbar className="crinav" expand="md">
+      <Container>
+        <Navbar.Brand href="/">
+          cricket lion {/* Replace with your logo or brand name */}
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/contact">contact us</Nav.Link>
+            <Nav.Link href="/fees">fees</Nav.Link>
+            <Nav.Link href="/matches">Matches</Nav.Link>
+            <Nav.Link href="/events">Events</Nav.Link>
+            <Nav.Link href="/sign">Login/register</Nav.Link>
+            <NavDropdown title="Admin" id="basic-nav-dropdown">
+            <NavDropdown.Item href="/addmatches">Add matches</NavDropdown.Item>
+            <NavDropdown.Item href="/feeschange">Fees-P/U</NavDropdown.Item>
+          </NavDropdown>
+
+            {/* Add more Nav.Link components as needed */}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

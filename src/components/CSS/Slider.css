@@ -1,0 +1,20 @@
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    transform: rotate(-90deg);
+    white-space: nowrap; /* Prevents text wrapping */
+    margin: 60px 0;/* Adjust spacing between rotated items */
+  }
+  
+  .sidebar-menu li a {
+    color: black; /* Optional: Change link text color */
+    text-decoration: none; /* Optional: Remove underline */
+    margin: 0 20px;
+
+  }
+  
+  .side{
+  }

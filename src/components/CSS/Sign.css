@@ -1,0 +1,45 @@
+/* src/components/App.css */
+body {
+    font-family: "Kanit", sans-serif;
+}
+
+.nav {
+    text-align: center;
+    text-transform: capitalize;
+    color: brown !important;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav p {
+    font-weight: 400;
+}
+
+.finner-text {
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 10px 0;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: brown;
+}
+
+.funderline-effect {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: brown;
+    transition: width 0.3s ease;
+}
+
+.finner-text:hover .funderline-effect {
+    width: 100%;
+}
+
+.L-box {
+    max-width: 400px;
+}

@@ -2,37 +2,35 @@ import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import App from './components/App'
 import Home from './components/Home'
-import Customer from './components/Customer'
-import Client from './components/Client'
-import Documents from './components/Documents'
-import Login from './components/Login'
+import Fees from './components/Fees'
+import Sign from './components/Sign'
+import Contactus from './components/Contactus'
+
 
 const Routes = createBrowserRouter([
+   
     {
-    path:"/",
-    element:<Login/>
-    },
-    {
-        path: '/t',
+        path: '/',
         element: <App />,
         children: [
             {
-                path: "/t",
+                path: "/",
                 element: <Home />
             },
             {
-                path: "/t/customer",
-                element: <Customer />
+                path: "/sign",
+                element: <Sign />
             },
             {
-                path: "/t/clients",
-                element: <Client />
+                path: "/fees",
+                element: <Fees />
             },
             {
-                path: "/t/documents",
-                element: <Documents
-                />
-            }
+                path: "/contact",
+                element: <Contactus />
+            },
+
+
         ]
 
     }
