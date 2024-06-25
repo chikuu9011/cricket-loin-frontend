@@ -1,0 +1,41 @@
+.menu{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(87, 84, 84);
+  color: rgba(255, 255, 255, 0.61);
+}
+
+ul li{
+text-decoration: none;
+list-style: none;
+color: black;
+text-transform: capitalize;
+}
+
+.admin{
+  max-width: 5rem;
+  max-height: 5rem;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+.nav-link{
+  color: white !important;
+  margin: 25px 0;
+}
+.userinfo{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-items: center;
+}
+.side{
+  background-color: black;
+  color: white;
+}
+.ii{
+  text-transform: uppercase;
+}
