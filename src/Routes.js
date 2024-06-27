@@ -5,10 +5,13 @@ import Home from './components/Home'
 import Fees from './components/Fees'
 import Sign from './components/Sign'
 import Contactus from './components/Contactus'
+import Addmatches from './components/Addmatches'
+import Unpaid from './components/Unpaid'
+import Matches from './components/Matches'
 
 
 const Routes = createBrowserRouter([
-   
+
     {
         path: '/',
         element: <App />,
@@ -29,7 +32,18 @@ const Routes = createBrowserRouter([
                 path: "/contact",
                 element: <Contactus />
             },
-
+            {
+                path: "/matches",
+                element: <Matches />
+            },
+            {
+                path: "/addmatches",
+                element: <Addmatches />
+            },
+            {
+                path: "/feeschange",
+                element: < Unpaid />
+            },
 
         ]
 

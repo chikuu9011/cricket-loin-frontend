@@ -14,7 +14,7 @@ const RegisterForm = () => {
         const data = { name, email, address, mobile, password };
 
         try {
-            const response = await fetch('http://localhost:3000/haware', {
+            const response = await fetch('https://cricket-loins-backend.vercel.app/players/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)

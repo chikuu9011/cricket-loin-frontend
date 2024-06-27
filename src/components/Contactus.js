@@ -19,6 +19,7 @@ const Contactus = () => {
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
+                            title='map'
                         ></iframe>
                     </Col>
                     <Col xl={6} lg={12} md={12} sm={12} xs={12}>
